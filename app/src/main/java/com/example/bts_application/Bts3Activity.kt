@@ -3,9 +3,9 @@ package com.example.bts_application
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class Bts1Activity : AppCompatActivity() {
+class Bts3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bts1)
+        setContentView(R.layout.activity_bts3)
     }
 }
