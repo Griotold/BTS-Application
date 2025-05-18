@@ -1,5 +1,6 @@
 package com.example.bts_application
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
@@ -18,9 +19,13 @@ class MainActivity : AppCompatActivity() {
         image1.setOnClickListener{
             // Toast.makeText(context, text, duration)
             Toast.makeText(this, "1번 클릭 완료", Toast.LENGTH_LONG).show()
+
+            // 2. 화면이 클릭되면, 다음 화면으로 넘어가서, 사진을 크게 보이게!
+            val intent = Intent(this, Bts1Activity::class.java)
+            startActivity(intent)
         }
 
 
-        // 2. 화면이 클릭되면, 다음 화면으로 넘어가서, 사진을 크게 보이게!
+
     }
 }
